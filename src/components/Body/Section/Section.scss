@@ -1,0 +1,226 @@
+.section-wrapper {
+    position: relative;
+    .section-inner {
+        position: relative;
+        .product-wrapper {
+            position: relative;
+            .product-inner {
+                position: relative;
+                padding: 30px 23px 70px;
+                .sub-banner {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    position: relative;
+                    margin-bottom: 30px;
+                    .sub-banner__item {
+                        position: relative;
+                        cursor: pointer;
+                        max-width: 370px;
+                        max-height: 200px;
+                        .sub-banner__image {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .sub-banner__overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                        }
+                        .sub-banner__text {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 16px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: #ffffff;
+                            border: 2px solid transparent;
+                        }
+                        &:hover {
+                            > .sub-banner__text {
+                                border-bottom: 2px solid #fff;
+                            }
+                        }
+                    }
+                }
+                .product {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .product-text {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-bottom: 35px;
+                        z-index: 1;
+                        background-color: #fff;
+                        max-width: 430px;
+                        min-width: 230px;
+                        .product__text-title {
+                            font-size: 20px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: #232323;
+                            text-align: center;
+                            position: relative;
+                            z-index: 1;
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: 12px;
+                            letter-spacing: 0px;
+                            color: var(--primary-color);
+                            font-weight: 400;
+                            cursor: pointer;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .product-display {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 30px;
+                        flex-wrap: wrap;
+                    }
+                    .product-btn {
+                        width: 300px;
+                        height: 46px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid var(--primary-color);
+                        color: var(--black-color);
+                        background-color: #ffffff;
+                        font-size: 14px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 13px;
+                        width: 100%;
+                        height: 2px;
+                        background-color: var(--primary-color);
+                        z-index: 0;
+                    }
+                }
+            }
+        }
+        .gallery-wrapper {
+            position: relative;
+            background-image: url(../../../assets/images/gallery/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            .gallery-inner {
+                position: relative;
+                padding: 70px 23px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+                .gallery-title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 17px;
+                    margin-bottom: 13px;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    .instagram-icon {
+                        font-size: 25px;
+                    }
+                }
+                .gallery-description {
+                    font-size: 12px;
+                    letter-spacing: 0px;
+                    line-height: 18px;
+                    color: #3c3c3c;
+                    font-weight: 400;
+                    margin-bottom: 28px;
+                    text-align: center;
+                }
+                .gallery-display {
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    .gallery-display__list {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 5px;
+                        flex-wrap: nowrap;
+                        scroll-behavior: smooth;
+                        overflow: hidden;
+                        .gallery-display__item {
+                            width: 230px;
+                            height: 230px;
+                            flex-shrink: 0;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .gallery-display__btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 36px;
+                        height: 36px;
+                        border: 1px solid #c8c8c8;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #fff;
+                        cursor: pointer;
+                    }
+                    .left-btn {
+                        left: -18px;
+                    }
+                    .right-btn {
+                        right: -18px;
+                    }
+                }
+                .gallery-btn {
+                    height: 45px;
+                    width: 230px;
+                    background-color: var(--primary-color);
+                    color: #ffffff;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 854px) {
+    .sub-banner {
+        flex-direction: column;
+    }
+}

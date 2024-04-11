@@ -1,0 +1,45 @@
+/* color palette from <https://github.com/vuejs/theme> */
+
+/* semantic color variables for this project */
+:root {
+  --primary-color: #232323;
+  --primary-color-hover: #323232;
+  --blue-color: #4b6cc0;
+  --yellow-color: #fff100;
+  --gray-color: #e8e8e8;
+  --green-color: #13c89c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #cfcfcf;;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.container-wrapper {
+  max-width: 1216px;
+  margin: auto;
+}

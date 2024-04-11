@@ -1,0 +1,68 @@
+<div class="carousel-inner__image" 
+                        :class="{ 
+                            'active': nextIndex === 1 || nextIndex === 3 || prevIndex === 1 || prevIndex === 2 || index === 1,
+                            'animation-hide-to-left': nextIndex === 1,
+                            'animation-hide-to-right': prevIndex === 1, 
+                            'animation-show-from-left': prevIndex === 2,
+                            'animation-show-from-right': nextIndex === 3,
+                        }"
+                    >
+                        <img src="../../../assets/images/carousel/carousel1.png" alt="carousel-image">
+                    </div>
+                    <div class="carousel-inner__image" 
+                        :class="{ 
+                            'active': nextIndex === 2 || nextIndex === 1 || prevIndex === 2 || prevIndex === 3 || index === 2,
+                            'animation-hide-to-left': nextIndex === 2,
+                            'animation-hide-to-right': prevIndex === 2, 
+                            'animation-show-from-left': prevIndex === 3,
+                            'animation-show-from-right': nextIndex === 1,
+                        }"
+                    >
+                        <img src="../../../assets/images/carousel/carousel2.png" alt="carousel-image">
+                    </div>
+                    <div class="carousel-inner__image" 
+                        :class="{ 
+                            'active': nextIndex === 3 || nextIndex === 2 || prevIndex === 3 || prevIndex === 1 || index === 3,
+                            'animation-hide-to-left': nextIndex === 3,
+                            'animation-hide-to-right': prevIndex === 3, 
+                            'animation-show-from-left': prevIndex === 1,
+                            'animation-show-from-right': nextIndex === 2,
+                        }"
+                    >
+                        <img src="../../../assets/images/carousel/carousel3.png" alt="carousel-image">
+                    </div>
+
+
+                    <div class="carousel-inner__image" 
+                        :class="{ 
+                            'active': nextIndex === 1 || nextIndex === 3 || prevIndex === 1 || prevIndex === 2 || index === 1,
+                            'carousel-inner__image-start': nextIndex === 1,
+                            'carousel-inner__image-end': prevIndex === 1, 
+                            'carousel-inner__image-prev': prevIndex === 2,
+                            'carousel-inner__image-next': nextIndex === 3,
+                        }"
+                    >
+                        <img src="../../../assets/images/carousel/carousel1.png" alt="carousel-image">
+                    </div>
+                    <div class="carousel-inner__image" 
+                        :class="{ 
+                            'active': nextIndex === 2 || nextIndex === 1 || prevIndex === 2 || prevIndex === 3 || index === 2,
+                            'carousel-inner__image-start': nextIndex === 2,
+                            'carousel-inner__image-end': prevIndex === 2, 
+                            'carousel-inner__image-prev': prevIndex === 3,
+                            'carousel-inner__image-next': nextIndex === 1,
+                        }"
+                    >
+                        <img src="../../../assets/images/carousel/carousel2.png" alt="carousel-image">
+                    </div>
+                    <div class="carousel-inner__image" 
+                        :class="{ 
+                            'active': nextIndex === 3 || nextIndex === 2 || prevIndex === 3 || prevIndex === 1 || index === 3,
+                            'carousel-inner__image-start': nextIndex === 3,
+                            'carousel-inner__image-end': prevIndex === 3, 
+                            'carousel-inner__image-prev': prevIndex === 1,
+                            'carousel-inner__image-next': nextIndex === 2,
+                        }"
+                    >
+                        <img src="../../../assets/images/carousel/carousel3.png" alt="carousel-image">
+                    </div>

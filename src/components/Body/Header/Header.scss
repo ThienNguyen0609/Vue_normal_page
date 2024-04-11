@@ -1,0 +1,122 @@
+.carousel-wrapper {
+    position: relative;
+    .carousel-inner {
+        position: relative;
+        .carousel-inner__arrow-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 72px;
+            height: 72px;
+            border: 1px solid var(--primary-color);
+            opacity: 0.6;
+            border-radius: 50%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .prev-arrow-btn {
+            left: 170px;
+        }
+        .next-arrow-btn {
+            right: 170px;
+        }
+        .carousel-inner__images {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            .carousel-inner__image {
+                position: relative;
+                display: none;
+                float: left;
+                width: 100%;
+                margin-right: -100%;
+                backface-visibility: hidden;
+                transition: transform 5s ease;
+                img {
+                    width: 100%;
+                }
+            }
+            .active {
+                display: block;
+            }
+            // .carousel-inner__image-next,
+            // .carousel-inner__image-end {
+            //     transform: translateX(100%);
+            // }
+            // .carousel-inner__image-prev,
+            // .carousel-inner__image-start {
+            //     transform: translateX(-100%);
+            // }
+            .animation-hide-to-left {
+                animation: hide-to-left .5s ease forwards;
+            }
+            .animation-hide-to-right {
+                animation: hide-to-right .5s ease forwards;
+            }
+            .animation-show-from-left {
+                animation: show-from-left .5s ease forwards;
+            }
+            .animation-show-from-right {
+                animation: show-from-right .5s ease forwards;
+            }
+        }
+    }
+}
+
+@keyframes hide-to-left {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes hide-to-right {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+@keyframes show-from-left {
+    from {
+        right: 100%;
+    }
+    to {
+        right: 0;
+    }
+}
+@keyframes show-from-right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .carousel-wrapper {
+        .carousel-inner {
+            .prev-arrow-btn {
+                left: 20px;
+            }
+            .next-arrow-btn {
+                right: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 854px) {
+    .carousel-wrapper {
+        .carousel-inner {
+            .carousel-inner__arrow-btn {
+                display: none;
+            }
+        }
+    }
+}
